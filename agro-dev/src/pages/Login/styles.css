@@ -1,0 +1,198 @@
+
+.page-login{
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px auto;
+  background: #98b5fb;
+}
+
+.page-login header .logo{
+  width: 240px;
+  height: 200px;
+  position: relative;
+}
+
+  .page-login header .logo{
+    position: relative;
+    animation-name: logo;
+    animation-duration: 3s;
+    transition: 200ms;
+  }
+  
+  @keyframes logo {
+    0%   { left:100px; top:0px;}
+    100% { left: 0px; top:0px;}
+    
+  }
+
+.page-login .form-login{
+  display: flex;
+  flex-direction: column;
+  margin: -40px 0;
+  margin-bottom: 50px;
+  background:#ffffff ;
+  padding: 20px;
+  width: 17.0rem;
+  height: 14.0rem;
+  color: #000;
+  border: inherit ;
+  justify-content: center;
+  border: 1px solid rgb(209, 184, 184);
+}
+
+.page-login .form-login{
+  padding: 10px;
+  position: relative;
+  animation-name: login;
+  animation-duration: 4s;
+  transition: 200ms;
+  outline: 0;
+  border: 0;
+  align-items: center;
+  justify-content: center;
+
+}
+
+@keyframes login {
+
+  0%   { left:0px; top:100px;}
+  50%  { left:0px; top:0px;}
+  75% { left: 0px; top:0px;}
+  100% { left: 0px; top:0px;}
+  
+}
+.page-login .form-login fieldset label{
+  font-size: 22px;
+}
+.page-login .form-login fieldset .lb-usuario{
+  padding: 5px;
+  position: relative;
+  top: -20px;
+
+}
+.page-login .form-login fieldset .lb-usuario2{
+  padding: 5px;
+  position: relative;
+  top: -6px;
+}
+
+.input{
+  position: relative;
+  top: -25px;
+  width: 90%;
+  height: 2.0rem;
+  border: none;
+  outline: 0;
+  font: 1.6rem Archivo;
+  font-size: 18px;
+  border-bottom: 1px solid #000;
+  transition: 400ms;
+  background: none;
+   
+  }
+  .input2{
+    position: relative;
+    top: -10px;
+    width: 90%;
+    height: 2.0rem;
+    border: none;
+    outline: 0;
+    font: 1.6rem Archivo;
+    font-size: 18px;
+    border-bottom: 1px solid #000;
+    transition: 400ms;
+    background: none;
+     
+    }
+  input{
+    position: relative;
+    left: 15px;
+    color: rgb(139, 116, 116);
+    }
+ 
+  .input:focus{
+    position: relative;
+    top: -15px;
+    border-bottom: 2px solid#98b5fb;
+    
+  }
+  
+  .input2:focus{
+    position: relative;
+    top: 0px;
+    border-bottom: 2px solid#98b5fb;
+    
+  }
+  
+.btn-login {
+top: 5px;
+display: flex;
+position: relative;
+background-color: #e0e0e0;
+color:#a79898;
+opacity: 0.9;
+width: 13.0rem;
+height: 2.0rem;
+border: none;
+align-items: center;
+justify-content: center;
+font-size: 19px;
+transition: 400ms;
+left: 14px;
+
+}
+.btn-login:hover {
+  background-color:#98b5fb;
+  font-size: 22px;
+}
+
+.page-login .form-login fieldset a{ 
+  position: relative;
+  left: 20px;
+  top:20px;
+  text-decoration: none;
+  font-size: 1.0rem;
+  color:#a79898;
+  transition: 400ms;
+}
+.page-login .form-login fieldset a:hover{ 
+  text-decoration: 0;
+  font-size:  1.1rem;
+}
+
+@media(max-width: 700px){
+   
+ .page-login .form-login fieldset .btn-login {
+  width: 14.0rem;
+  height: 2.5rem;
+  padding: 0 10px;
+  }
+
+  .page-login .form-login{
+  margin: -20 auto;
+  width: 17.0rem;
+  height: 17.0rem;
+  }
+
+   
+  .page-login .form-login fieldset .btn-login {
+  top: 10px;
+  width: 11.0rem;
+  height: 2.0rem;
+  font-size: 17px;
+  left: 25px;
+}
+
+  
+.page-login .form-login fieldset a{ 
+  top: 25px;
+  left: 20px;
+
+}
+  
+}

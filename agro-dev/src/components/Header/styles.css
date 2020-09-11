@@ -1,0 +1,162 @@
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+
+body{
+  font-size: 1.6rem;
+}
+header{
+  background-color: #fff;
+}
+
+header .container {
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  width: 90%; /*porcentagem usada para um layout mais responsivo*/
+  max-width: 980px;
+  margin: auto;
+
+}
+
+header img {
+  width: 50px;
+  margin-left: 20px;
+  padding: 15px 0;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(204, 196, 196);
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif ;
+  font-size: 1.2rem;
+  padding: 2.4rem;
+  transition: all 250ms linear 0s;
+}
+
+header nav ul li a:hover {
+  font-size: 1.4rem;
+  color: rgb(148, 145, 145);
+}
+
+
+@media (max-width: 768px){
+  html{
+    font-size: 90%;
+  }
+}
+
+
+@media (max-width: 630px){
+  html{
+    font-size: 70%;
+  }
+ .hero .container{
+   flex-direction: column;
+   text-align: center;
+ }
+
+ .hero .container img{
+   order: -1; /* para a imagem ficar encima do texto*/
+ }
+
+ .form-group{
+   display: block;
+ }
+}
+
+@media (max-width: 790px){
+  html{
+    font-size: 90%;
+  }
+  nav{
+    display: none;
+  }
+
+  .one,
+  .two,
+  .three{
+    background-color: #1fcf83;
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+    transition-duration: 0.3s;
+  }
+  .menu-toggle{
+    width: 40px;
+    height: 30px;
+    margin-right: 40px;
+  }
+
+  /*Fullscreen*/
+  .menu-section.on {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #1fcf83;
+    z-index: 10; /*camada acima, evitar o scrool dos itens a baixo*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-section.on nav{
+    display: block;
+  }
+
+  
+  .menu-section.on .menu-toggle{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+  }
+
+  
+  .menu-section.on .menu-toggle .one{
+    transform: rotate(45deg) translate(7px, 7px);
+    background-color: #fff;
+  }
+
+  .menu-section.on .menu-toggle .two{
+   opacity: 0;
+
+  }
+
+  .menu-section.on .menu-toggle .three{
+    transform: rotate(-45deg) translate(8px, -9px);
+    background-color: #fff;
+  }
+
+  .menu-section.on nav ul{
+    text-align: center;
+    display: block;
+  }
+
+  .menu-section.on nav ul a{ 
+   transition-duration:  0.5s;
+   font-size: 2.5rem;
+  
+    display: block;
+    color: #fff;
+  }
+
+}
+
+@media (max-width: 320px){
+  #form h3{
+    font-size: 2rem;
+  }
+
+}
+
+

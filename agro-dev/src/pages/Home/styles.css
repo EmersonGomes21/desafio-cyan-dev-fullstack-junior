@@ -1,0 +1,102 @@
+
+.page-home-container{
+  display: flex;
+  margin: 0 auto ;
+  width: 100%;
+  height: 100vh;
+  background-color: #f4f4f4;
+
+}
+.page-home-container .corpo{
+  width: 100%; /*porcentagem usada para um layout mais responsivo*/
+  max-width: 980px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  
+}
+.page-home-container .corpo img{
+  width: 500px;
+  height: 500px;
+
+}
+.page-home-container .corpo p {
+  position: relative;
+  text-align: initial;
+  top: -40px;
+  max-width: 500px;
+  color: #007241;
+  font-family: 'Roboto', sans-serif ;
+  font-size: 2.5rem;
+  line-height: 3.2rem;
+  left: 30px;
+ 
+}
+
+   /*Até*/                      
+@media(max-width: 1100px){
+  
+.page-home-container{
+  display: flex;
+  position: absolute;
+  text-align: center;
+  margin: 0;
+}
+
+.page-home-container .corpo{
+  display: block;
+  position: relative;
+  width: 100vw;
+  height: 70vh;
+  margin: 50px 20px;
+}
+
+.page-home-container .corpo p{
+  position: relative;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+
+}
+          
+@media(max-width: 750px){
+  .page-home-container {
+    margin: 20px auto;
+    
+
+  }
+  .page-home-container .corpo{
+    width: 100%; 
+    max-width: 980px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    
+  }
+  .page-home-container .corpo img{
+    width: 338px;
+    height: 338px;
+  
+  }
+
+  
+.page-home-container .corpo p{
+  position: relative;
+  text-align: initial;
+  justify-content: center;
+  left: 0;
+  margin: 20px auto;
+  max-width: 700px;
+  font-size: 1.8rem;
+
+}
+
+
+}
+  
+
