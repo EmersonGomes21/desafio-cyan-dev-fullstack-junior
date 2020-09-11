@@ -1,0 +1,19 @@
+express para manipular as rotas
+npm install typescript -D
+npx tsc --init
+npm install ts-node -D
+
+
+Para executar o arquivo 
+npx ts-node src/server.ts 
+
+Para reiniciar automaticamente o server
+npm install ts-node-dev -D
+
+
+
+
+
+AVISOOOOOOS
+
+LEmbrar de adicionar o sobrenome para que não fique um nome de usuario muito grande
